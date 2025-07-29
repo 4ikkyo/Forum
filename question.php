@@ -9,6 +9,8 @@ require_once "vendor/connect.php";
 require_once "vendor/online/updateOnline.php";
 require_once "vendor/online/outputOnline.php";
 
+updateOnline($connect, $id);
+
 $per_page = 5;
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $start = ($page - 1) * $per_page;

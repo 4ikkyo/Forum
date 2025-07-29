@@ -9,6 +9,8 @@ require_once "vendor/connect.php";
 require_once "vendor/online/updateOnline.php";
 require_once "vendor/online/outputOnline.php";
 
+updateOnline($connect, $id);
+
 $infoUser = mysqli_fetch_array(mysqli_query($connect, "SELECT * FROM users_info WHERE id='$id'"));
 
 $topics = mysqli_query($connect, "SELECT

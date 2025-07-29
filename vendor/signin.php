@@ -21,12 +21,3 @@ if (password_verify($password, $row['password'])) {
     $_SESSION['message'] = 'Не верный логин или пароль';
     header('Location: ../signin.php');
 }
-
-?>
-
-<pre>
-    <?php
-    print_r($check_user);
-    print_r($row);
-    ?>
-</pre>

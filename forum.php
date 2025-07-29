@@ -8,6 +8,8 @@ $id = $_SESSION['user']['id'];
 require_once "vendor/connect.php";
 require_once "vendor/online/updateOnline.php";
 
+updateOnline($connect, $id);
+
 $topics = mysqli_query($connect, "SELECT
                                 `topics`.`id` AS `topic_id`,
                                 `topics`.`title` AS `topic_title`,
