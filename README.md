@@ -1,4 +1,4 @@
-# Forum (Course Project)
+# Forum
 
 This project is a simple forum system built with PHP and MySQL. It was developed during my bachelor's studies as a course project and is now included in my portfolio as an example of an project.
 
